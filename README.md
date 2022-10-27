@@ -69,16 +69,16 @@
 > ## Результат 2 этапа:  
 > 1. Установил свежую версию Terraform
 >   ```shell
->   ruslan@ruslan-notebook:~$ terraform -v
->   Terraform v1.2.9
->   on linux_amd64
+>   PS C:\Windows\system32> terraform --version
+>   Terraform v1.3.3
+>   on windows_amd64
 >   ```
 > 2. Создал сервисный аккаунт с ролью `editor`.
 > ![img_2.png](img/img_2.png)
-> Сгенерировал в файл ключ доступа
->   ```
->   ruslan@ruslan-notebook:~$ yc iam key create --service-account-name kashindiplom --output /home/ruslan/myData/DevOps/DevopsHomework/Diplom/terraform/key.json
->   ```
+> Установил Интерфейс командной строки Yandex Cloud (CLI), Настроил подключение.
+>   
+> ![img_2_2.png](img/img_2_2.png)
+>   
 > 3. Подготовил backend для Terraform: Создал S3 bucket в YC аккаунте.
 > ![img_3.png](img/img_3.png)
 > 4. Написал конфигурацию terraform для создания VPC с подсетями в разных зонах доступности.
